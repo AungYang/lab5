@@ -3,9 +3,7 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
-	
 })
-
 
 
 /*
@@ -16,38 +14,38 @@ function initializePage() {
 }
 
 function anagrammedName(name) {
+
 	// Thanks, Internet Anagram Server!
 	
 	if (name == "Doug Engelbart") {
-		var x = document.getElementsByClassName(name);
-		alert(x);
-		// return "Notable Grudge";
+		document.getElementsByClassName(name)[0].innerHTML = "Notable Grudge";
 	} 
 	else if (name == "Ivan Sutherland") {
-		return "Vandal Heist Run";
+		document.getElementsByClassName(name)[0].innerHTML = "Vandal Heist Run";
 	}
 	else if (name == "JCR Licklider") {
-		return "Crick Rid Jell";
+		document.getElementsByClassName(name)[0].innerHTML = "Crick Rid Jell";
 	}
 	else if (name == "Vannevar Bush") {
-		return "Ravens Van Hub";
+		document.getElementsByClassName(name)[0].innerHTML = "Ravens Van Hub";
 	}
 	else if (name == "Alan C. Kay") {
-		return "Canal Yak";
+		document.getElementsByClassName(name)[0].innerHTML = "Canal Yak";
 	}
 	else if (name == "Allen Newell") {
-		return "Ellen All New";
+		document.getElementsByClassName(name)[0].innerHTML = "Ellen All New";
 	}
 	else if (name == "Lucy Suchman") {
-		return "Lunacy Chums";
+		document.getElementsByClassName(name)[0].innerHTML = "Lunacy Chums";
 	}
 	else if (name == "Grace Hopper") {
-		return "Gear Chopper";
+		document.getElementsByClassName(name)[0].innerHTML = "Gear Chopper";
 	}
 	else {
 		console.log(name + " not known for anagramming.");
 		return name;
 	}
 }
+
 
 
